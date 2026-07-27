@@ -1,35 +1,32 @@
-export function Navbar(){
+export function Navbar() {
 
-return `
+  return `
 
 <header class="navbar">
 
-<div>
-<h1>☁️ Cloud Dashboard</h1>
-<p class="subtitle">
-AWS Infrastructure Monitoring
-</p>
-</div>
+  <div>
 
+    <h1>☁️ Cloud Incident Dashboard</h1>
 
-<div class="nav-right">
+    <p class="subtitle">
+      Real-Time Event Driven Monitoring System
+    </p>
 
-<input 
-type="text" 
-placeholder="Search services..."
-class="search"
-/>
+  </div>
 
+  <div class="nav-right">
 
-<div class="profile">
-👤 Usha
-</div>
+    <button
+      class="refresh-btn"
+      id="refreshBtn"
+    >
+      🔄 Refresh Now
+    </button>
 
-
-</div>
+  </div>
 
 </header>
 
-`
+`;
 
 }

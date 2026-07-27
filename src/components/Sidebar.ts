@@ -4,44 +4,30 @@ return `
 
 <aside class="sidebar">
 
-
-<h2>
-☁ CloudOps
-</h2>
-
+<h2>☁ CloudOps</h2>
 
 <ul>
 
-<li class="active">
-🏠 Dashboard
-</li>
+<li class="active">🏠 Dashboard</li>
 
-<li>
-🖥 EC2
-</li>
+<li>🚨 Incidents</li>
 
-<li>
-🪣 S3
-</li>
+<li>🖥 EC2</li>
 
-<li>
-⚡ Lambda
-</li>
+<li>🪣 S3</li>
 
-<li>
-📊 CloudWatch
-</li>
+<li>⚡ Lambda</li>
 
-<li>
-🔐 IAM Security
-</li>
+<li>📊 DynamoDB</li>
 
+<li>🌐 API Gateway</li>
+
+<li>🔐 IAM</li>
 
 </ul>
 
-
 </aside>
 
-`
+`;
 
 }

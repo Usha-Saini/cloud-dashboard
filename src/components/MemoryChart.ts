@@ -17,21 +17,21 @@ Tooltip,
 Legend
 );
 
-let cpuChart: Chart | null = null;
+let memoryChart: Chart | null = null;
 
-export function renderCPUChart(values:number[]){
+export function renderMemoryChart(values:number[]){
 
-const canvas=document.getElementById("cpuChart") as HTMLCanvasElement;
+const canvas=document.getElementById("memoryChart") as HTMLCanvasElement;
 
 if(!canvas) return;
 
-if(cpuChart){
+if(memoryChart){
 
-cpuChart.destroy();
+memoryChart.destroy();
 
 }
 
-cpuChart=new Chart(canvas,{
+memoryChart=new Chart(canvas,{
 
 type:"bar",
 
@@ -41,7 +41,7 @@ labels:values.map((_,i)=>`Server ${i+1}`),
 
 datasets:[{
 
-label:"CPU %",
+label:"Memory %",
 
 data:values
 

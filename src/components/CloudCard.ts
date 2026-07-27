@@ -1,58 +1,146 @@
-export function CloudCard(
-  title: string,
-  value: string,
-  status: string,
-  icon: string
-) {
+import {
+  Chart,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  BarController,
+  Tooltip,
+  Legend
+} from "chart.js";
 
-let statusClass = "status";
 
-if(status.toLowerCase() === "running"){
+Chart.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  BarController,
+  Tooltip,
+  Legend
+);
 
-statusClass = "status running";
 
-}
-else if(status.toLowerCase() === "stopped"){
+let cpuChart: Chart | null = null;
 
-statusClass = "status stopped";
 
-}
-else if(status.toLowerCase() === "terminated"){
+export function renderCPUChart(values: number[]) {
 
-statusClass = "status terminated";
+  const canvas =
+    document.getElementById("cpuChart") as HTMLCanvasElement;
 
-}
 
-return `
+  if (!canvas) return;
 
-<div class="card">
 
-<div class="card-icon">
+  if (cpuChart) {
 
-${icon}
+    cpuChart.destroy();
 
-</div>
+  }
 
-<h3>
 
-${title}
+  cpuChart = new Chart(canvas, {
 
-</h3>
+    type: "bar",
 
-<p class="number">
+    data: {
 
-${value}
+      labels: values.map(
+        (_, i) => `Server ${i + 1}`
+      ),
 
-</p>
+      datasets: [
 
-<span class="${statusClass}">
+        {
 
-${status}
+          label: "CPU Utilization (%)",
 
-</span>
+          data: values,
 
-</div>
+          backgroundColor: "#38bdf8",
 
-`;
+          borderColor: "#7dd3fc",
+
+          borderWidth: 1,
+
+          borderRadius: 6
+
+        }
+
+      ]
+
+    },
+
+
+    options: {
+
+      responsive: true,
+
+      maintainAspectRatio: false,
+
+      plugins: {
+
+        legend: {
+
+          labels: {
+
+            color: "#ffffff"
+
+          }
+
+        }
+
+      },
+
+
+      scales: {
+
+        x: {
+
+          ticks: {
+
+            color: "#cbd5e1"
+
+          },
+
+          grid: {
+
+            color: "rgba(255,255,255,0.08)"
+
+          }
+
+        },
+
+
+        y: {
+
+          beginAtZero: true,
+
+          max: 100,
+
+          ticks: {
+
+            color: "#cbd5e1",
+
+            callback: function(value) {
+
+              return value + "%";
+
+            }
+
+          },
+
+          grid: {
+
+            color: "rgba(255,255,255,0.08)"
+
+          }
+
+        }
+
+      }
+
+    }
+
+  });
 
 }

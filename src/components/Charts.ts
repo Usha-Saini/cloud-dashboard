@@ -1,25 +1,12 @@
 export function Charts() {
 
-return `
+  return `
 
 <section class="charts">
 
 <h2>Cloud Analytics</h2>
 
 <div class="chart-container">
-
-
-<div class="chart-card">
-
-<h3>CPU Utilization</h3>
-
-<div class="cpu-chart-box">
-<canvas id="cpuChart"></canvas>
-</div>
-
-</div>
-
-
 
 <div class="chart-card">
 
@@ -32,7 +19,6 @@ return `
 </div>
 
 
-
 <div class="chart-card">
 
 <h3>Monthly Cost</h3>
@@ -43,6 +29,16 @@ return `
 
 </div>
 
+
+<div class="chart-card severity-card">
+
+<h3>Incident Severity</h3>
+
+<div class="cpu-chart-box">
+<canvas id="severityChart"></canvas>
+</div>
+
+</div>
 
 </div>
 
