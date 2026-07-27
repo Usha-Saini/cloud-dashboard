@@ -101,14 +101,28 @@ Interactive charts provide insights into:
 - AWS IAM
 
 ---
-
 # 📂 Project Structure
-
-```text
 .
 ├── backend/
+├── documentation/
+│   ├── Architecture-Diagram.png
+│   ├── Workflow-Diagram.png
+│   └── Documentation.pdf
+│
 ├── public/
+│
 ├── screenshots/
+│   ├── 01-final-dashboard.png
+│   ├── 01-final-dashboard2.png
+│   ├── 02-dynamodb-processed-data.png
+│   ├── 03-trigger.png
+│   ├── 04-iam-roles.png
+│   ├── 05-s3-bucket-upload-status.png
+│   ├── 06-cloudwatch.png
+│   ├── 07-lambda-function.png
+│   ├── 08-api-gateway.png
+│   └── 09-api-stage.png
+│
 ├── src/
 │   ├── components/
 │   │   ├── AnalyticsChart.ts
