@@ -4,6 +4,7 @@ A real-time Cloud Incident Monitoring Dashboard built using **TypeScript, Vite, 
 
 ---
 
+
 ## 📌 Project Overview
 
 This dashboard simulates a cloud monitoring solution that enables users to monitor cloud infrastructure health in real time.
@@ -23,6 +24,13 @@ It provides insights into:
 - 💡 Incident Recommendations
 
 ---
+# 📄 Project Documentation
+
+The project documentation and diagrams are available in the `documentation` folder.
+
+- 📘 Documentation.pdf
+- 🏗️ Architecture-Diagram.png
+- 🔄 Workflow-Diagram.png
 
 # ✨ Features
 
