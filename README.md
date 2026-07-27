@@ -101,52 +101,56 @@ Interactive charts provide insights into:
 - AWS IAM
 
 ---
-# 📂 Project Structure
-.
-├── backend/
-├── documentation/
-│   ├── Architecture-Diagram.png
-│   ├── Workflow-Diagram.png
-│   └── Documentation.pdf
+## 📂 Project Structure
+
+```text
+cloud-dashboard/
 │
-├── public/
+├── 📁 backend/                     # Backend services and APIs
 │
-├── screenshots/
-│   ├── 01-final-dashboard.png
-│   ├── 01-final-dashboard2.png
-│   ├── 02-dynamodb-processed-data.png
-│   ├── 03-trigger.png
-│   ├── 04-iam-roles.png
-│   ├── 05-s3-bucket-upload-status.png
-│   ├── 06-cloudwatch.png
-│   ├── 07-lambda-function.png
-│   ├── 08-api-gateway.png
-│   └── 09-api-stage.png
+├── 📁 documentation/               # Project documentation
+│   ├── 📄 Architecture-Diagram.png
+│   ├── 📄 Workflow-Diagram.png
+│   └── 📄 Documentation.pdf
 │
-├── src/
-│   ├── components/
-│   │   ├── AnalyticsChart.ts
-│   │   ├── Charts.ts
-│   │   ├── CloudCard.ts
-│   │   ├── CPUChart.ts
-│   │   ├── MemoryChart.ts
-│   │   ├── Monitoring.ts
-│   │   ├── Navbar.ts
-│   │   ├── Sidebar.ts
-│   │   └── Summary.ts
+├── 📁 public/                      # Static assets
+│
+├── 📁 screenshots/                 # Project screenshots
+│   ├── 📸 01-final-dashboard.png
+│   ├── 📸 01-final-dashboard2.png
+│   ├── 📸 02-dynamodb-processed-data.png
+│   ├── 📸 03-trigger.png
+│   ├── 📸 04-iam-roles.png
+│   ├── 📸 05-s3-bucket-upload-status.png
+│   ├── 📸 06-cloudwatch.png
+│   ├── 📸 07-lambda-function.png
+│   ├── 📸 08-api-gateway.png
+│   └── 📸 09-api-stage.png
+│
+├── 📁 src/
+│   ├── 📁 components/
+│   │   ├── 📄 AnalyticsChart.ts
+│   │   ├── 📄 Charts.ts
+│   │   ├── 📄 CloudCard.ts
+│   │   ├── 📄 CPUChart.ts
+│   │   ├── 📄 MemoryChart.ts
+│   │   ├── 📄 Monitoring.ts
+│   │   ├── 📄 Navbar.ts
+│   │   ├── 📄 Sidebar.ts
+│   │   └── 📄 Summary.ts
 │   │
-│   ├── services/
-│   │   ├── api.ts
-│   │   └── cloudData.ts
+│   ├── 📁 services/
+│   │   ├── 📄 api.ts
+│   │   └── 📄 cloudData.ts
 │   │
-│   ├── main.ts
-│   └── style.css
+│   ├── 📄 main.ts
+│   └── 📄 style.css
 │
-├── .gitignore
-├── index.html
-├── package.json
-├── package-lock.json
-└── README.md
+├── 📄 .gitignore
+├── 📄 index.html
+├── 📄 package.json
+├── 📄 package-lock.json
+└── 📄 README.md
 ```
 
 ---
