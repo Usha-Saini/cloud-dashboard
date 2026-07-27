@@ -253,7 +253,7 @@ npm run build
 
 # 👩‍💻 Author
 
-**Saloni**
+**Usha**
 
 Final Year B.Tech CSE Student
 
