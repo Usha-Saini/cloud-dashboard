@@ -1,45 +1,50 @@
-# ☁️ Cloud Incident Dashboard
+# ☁️ Cloud Incident Monitoring Dashboard
 
-A real-time cloud incident monitoring dashboard designed to monitor cloud infrastructure, track incidents, visualize system metrics, and provide actionable recommendations.
+A real-time Cloud Incident Monitoring Dashboard built using **TypeScript, Vite, Chart.js, and AWS services**. The dashboard provides centralized monitoring of cloud infrastructure, tracks incidents, visualizes performance metrics, and displays actionable recommendations for faster issue resolution.
 
-## 🚀 Project Overview
+---
 
-The Cloud Incident Dashboard provides a centralized view of cloud infrastructure health and incident activity.
+## 📌 Project Overview
 
-The dashboard displays:
+This dashboard simulates a cloud monitoring solution that enables users to monitor cloud infrastructure health in real time.
 
-- EC2 Instances
-- S3 Buckets
-- Lambda Functions
-- Monthly AWS Cost
-- CPU Usage
-- Incident Severity Summary
-- API Request Analytics
-- Monthly Cost Analytics
-- Incident Severity Visualization
-- Recent Cloud Incidents
-- Server Health Metrics
-- Incident Recommendations
+It provides insights into:
 
-## ✨ Features
+- 🖥️ EC2 Instances
+- 🪣 Amazon S3 Buckets
+- ⚡ AWS Lambda Functions
+- 💰 Monthly AWS Cost
+- 📈 CPU Usage
+- 🚨 Incident Severity Summary
+- 📊 API Request Analytics
+- 📉 Monthly Cost Analytics
+- 📋 Recent Cloud Incidents
+- ❤️ Server Health Metrics
+- 💡 Incident Recommendations
+
+---
+
+# ✨ Features
 
 ### ☁️ Cloud Infrastructure Overview
 
-The dashboard provides quick insights into:
+Monitor important AWS resources including:
 
 - EC2 Instances
 - S3 Buckets
 - Lambda Functions
 - Monthly AWS Cost
-- CPU Usage
+- CPU Utilization
+
+---
 
 ### 🚨 Incident Monitoring
 
-Each incident displays:
+Each incident includes:
 
 - Server Name
 - AWS Region
-- Server Status
+- Current Status
 - Incident Severity
 - CPU Utilization
 - Memory Utilization
@@ -47,44 +52,57 @@ Each incident displays:
 - Recommended Action
 - Processed Timestamp
 
-### 📊 Cloud Analytics
+---
 
-The dashboard includes visual analytics for:
+### 📊 Analytics Dashboard
 
-- API Requests
+Interactive charts provide insights into:
+
+- API Request Trends
 - Monthly AWS Cost
 - Incident Severity Distribution
+- Resource Utilization
+
+---
 
 ### 🔄 Real-Time Monitoring
 
-The dashboard automatically refreshes cloud incident data every 30 seconds.
+- Automatic refresh every **30 seconds**
+- Manual **Refresh Now** button
+- Live cloud incident updates
 
-A manual **Refresh Now** button is also available to fetch the latest data.
+---
 
-## 🛠️ Technologies Used
+# 🛠️ Tech Stack
+
+### Frontend
 
 - TypeScript
+- HTML5
+- CSS3
 - Vite
 - Chart.js
-- HTML
-- CSS
-- AWS Services
-- API Gateway
-- AWS Lambda
-- Amazon S3
-- Amazon DynamoDB
 
-## 📁 Project Structure
+### AWS Services
+
+- Amazon API Gateway
+- AWS Lambda
+- Amazon DynamoDB
+- Amazon S3
+- Amazon CloudWatch
+- AWS IAM
+
+---
+
+# 📂 Project Structure
 
 ```text
-cloud-dashboard
-│
-├── public
-│
-├── screenshots
-│
-├── src
-│   ├── components
+.
+├── backend/
+├── public/
+├── screenshots/
+├── src/
+│   ├── components/
 │   │   ├── AnalyticsChart.ts
 │   │   ├── Charts.ts
 │   │   ├── CloudCard.ts
@@ -95,14 +113,157 @@ cloud-dashboard
 │   │   ├── Sidebar.ts
 │   │   └── Summary.ts
 │   │
-│   ├── services
+│   ├── services/
 │   │   ├── api.ts
 │   │   └── cloudData.ts
 │   │
 │   ├── main.ts
 │   └── style.css
 │
+├── .gitignore
+├── index.html
 ├── package.json
-├── tsconfig.json
-├── vite.config.ts
+├── package-lock.json
 └── README.md
+```
+
+---
+
+# 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/cloud-incident-dashboard.git
+```
+
+Go to the project directory
+
+```bash
+cd cloud-incident-dashboard
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the project
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+---
+
+# 📸 Project Screenshots
+
+## Dashboard
+
+![Dashboard](screenshots/01-final-dashboard.png)
+
+---
+
+## Dashboard Overview
+
+![Dashboard](screenshots/01-final-dashboard2.png)
+
+---
+
+## DynamoDB Processed Data
+
+![DynamoDB](screenshots/02-dynamodb-processed-data.png)
+
+---
+
+## Lambda Trigger
+
+![Trigger](screenshots/03-trigger.png)
+
+---
+
+## IAM Roles
+
+![IAM](screenshots/04-iam%20roles.png)
+
+---
+
+## S3 Upload Status
+
+![S3](screenshots/05-S3%20bucket%20docupload%20status.png)
+
+---
+
+## Amazon CloudWatch
+
+![CloudWatch](screenshots/06-Cloudwatch.png)
+
+---
+
+## AWS Lambda Function
+
+![Lambda](screenshots/07-lambdafunction.png)
+
+---
+
+## API Gateway
+
+![API](screenshots/08-api.png)
+
+---
+
+## API Stage
+
+![Stage](screenshots/09-apistage.png)
+
+---
+
+# 🎯 Key Highlights
+
+- Real-time cloud monitoring dashboard
+- AWS service integration
+- Interactive data visualization
+- Automated incident tracking
+- Resource utilization monitoring
+- Cloud cost analytics
+- Responsive dashboard interface
+- Modular TypeScript architecture
+
+---
+
+# 📈 Future Improvements
+
+- User Authentication
+- Role-Based Access Control (RBAC)
+- Email/SMS Incident Alerts
+- Multi-Cloud Monitoring
+- Historical Incident Reports
+- Export Reports (PDF & Excel)
+- Dark Mode
+- AI-based Incident Prediction
+
+---
+
+# 👩‍💻 Author
+
+**Saloni**
+
+Final Year B.Tech CSE Student
+
+Interested in:
+
+- Data Analytics
+- Cloud Computing
+- AI & Machine Learning
+- Full Stack Development
+
+---
+
+## ⭐ If you found this project useful, consider giving it a Star!
